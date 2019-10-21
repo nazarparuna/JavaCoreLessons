@@ -159,5 +159,11 @@ public class Lesson4 {
 
         // помилка при приведенні
         // instanceof
+
+        // Singleton example
+        System.out.println();
+        for(int i = 0; i < 5; i++){
+            President pre = President.getInstance();
+        }
     }
 }
