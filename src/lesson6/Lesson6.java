@@ -5,6 +5,9 @@ public class Lesson6 {
 
         // форматування коду
 
+        String str = " dsljsdfl";
+        String strs = new String("dsfsldj");
+
 
 
 
