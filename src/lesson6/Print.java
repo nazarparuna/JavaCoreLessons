@@ -1,6 +1,6 @@
 package lesson6;
 
-public interface Print extends Paper {
+public interface Print extends Paper, Sheet {
     String name = "Alice in the Wonderland";
 
     void print();
