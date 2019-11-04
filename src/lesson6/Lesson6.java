@@ -1,7 +1,7 @@
 package lesson6;
 
 import additionallesson6.forest.animals.Frog;
-import org.apache.log4j.BasicConfigurator;
+//import org.apache.log4j.BasicConfigurator;
 
 public class Lesson6 {
     public static void main(String[] args) {
