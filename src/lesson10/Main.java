@@ -156,13 +156,14 @@ public class Main {
                 "The heart-ache and the thousand natural shocks";
 
         char[] alphabet = new char[256];
-//        for(char sym : poetry.toLowerCase().toCharArray()){
-//            alphabet[(int)sym]++;
-//        }
-//
-//        for(int i = 97; i < 123; i++){
-//            System.out.println(((char)alphabet[i]) + " - " +  alphabet[i]);
-//        }
+        for (char sym : poetry.toLowerCase().toCharArray()) {
+            int symbol = ((char) sym % 256);
+            alphabet[(int) symbol]++;
+        }
+
+        for (int i = 97; i < 123; i++) {
+            System.out.println(((char) alphabet[i]) + " - " + alphabet[i]);
+        }
 
 
         // StringBuffer
