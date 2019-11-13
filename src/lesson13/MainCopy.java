@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Main {
+public class MainCopy {
     public static void main(String[] args) {
 
         // create list of Strings
@@ -53,30 +53,30 @@ public class Main {
         System.out.println();
 
         Iterator<String> iterator4 = names.iterator();
-
         while (iterator4.hasNext()) {
             String item = iterator4.next();
             System.out.println(" - " + item);
         }
         System.out.println();
 
-//        for (String name : names) {
-//            names.remove(name);
-//        }
-
-        for (int i = 0; i < names.size(); i++) {
-            if (names.get(i).equalsIgnoreCase("Olga")) {
-                names.remove(i);
-            }
-        }
-
-
-        for (String name : names) {
-            System.out.println(name);
-        }
-
 
         // show elements which still in collection
+
+        // listIterator
+
+//        ListIterator<String> stringListIterator = names.listIterator();
+//
+//        System.out.println();
+//        while(stringListIterator.hasNext()){
+//            System.out.println(stringListIterator.next());
+//        }
+//
+//        System.out.println();
+//        while (stringListIterator.hasPrevious()){
+//            System.out.println(stringListIterator.previousIndex() + ". " +
+//                    stringListIterator.previous());
+//
+//        }
 
 
     }

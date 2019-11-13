@@ -13,7 +13,7 @@ public class Student implements Comparable<Student> {
         this.age = age;
     }
 
-    public int getLevel() {
+    public Integer getLevel() {
         return level;
     }
 
@@ -29,7 +29,7 @@ public class Student implements Comparable<Student> {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
@@ -44,24 +44,6 @@ public class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student o) {
-        if (this.level > o.getLevel()) {
-            return 1;
-        } else if (this.level < o.getLevel()) {
-            return -1;
-        } else {
-            if (this.name.compareTo(o.getName()) > 0) {
-                return 1;
-            } else if (this.name.compareTo(o.getName()) < 0) {
-                return -1;
-            } else {
-                if (this.age > o.getAge()) {
-                    return 1;
-                } else if (this.age < o.getAge()) {
-                    return -1;
-                }
-            }
-        }
-
-        return 0;
+        return this.getLevel().compareTo(o.getLevel());
     }
 }
