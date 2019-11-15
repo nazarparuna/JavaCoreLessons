@@ -1,5 +1,7 @@
 package lesson14;
 
+import java.util.Objects;
+
 public class Person implements Comparable<Person> {
     private String name;
     private Integer age;
@@ -35,12 +37,28 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person o) {
+        int result = 0;
         int ageDiff = this.age.compareTo(o.getAge());
         if (ageDiff != 0) {
-            return ageDiff;
+            result = ageDiff;
         } else {
-            return this.name.compareTo(o.name);
+            result = this.name.compareTo(o.name);
         }
+//        System.out.println(result + " : " + this + " - " +  o);
+        return result;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(name, person.name) &&
+                Objects.equals(age, person.age);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
 }
