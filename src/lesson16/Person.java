@@ -5,6 +5,8 @@ import java.io.Serializable;
 public class Person extends Human implements Serializable {
     public String name;
     public int age;
+    double salary;
+    protected int children;
     private double height;
     private String lastName = "Walker";
 
@@ -99,5 +101,14 @@ public class Person extends Human implements Serializable {
     @Override
     public String toString() {
         return "Person [name=" + name + ", age=" + age + ", height=" + height + ", lastName=" + lastName + "]";
+    }
+
+    @Override
+    public void print() {
+
+    }
+
+    private void doNothing() {
+
     }
 }
