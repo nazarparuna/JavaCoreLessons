@@ -141,7 +141,7 @@ public class PersonFactory {
     }
 
     public static void showStaticName() {
-        System.out.println("Name from the  inner class is " + new SuperMan().name);
+        System.out.println("Name from the  inner class is ");
     }
 
 }
