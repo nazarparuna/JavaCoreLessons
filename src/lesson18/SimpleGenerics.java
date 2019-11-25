@@ -5,7 +5,6 @@ public class SimpleGenerics<T> {
     T ob;
 
     public SimpleGenerics(T ob) {
-        super();
         this.ob = ob;
     }
 

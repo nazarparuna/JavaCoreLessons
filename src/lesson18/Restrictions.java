@@ -9,13 +9,13 @@ public class Restrictions<T extends Number> {
         this.nums = nums;
     }
 
-    double average() {
+    Number average() {
         double sum = 0;
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i].doubleValue();
         }
 
-        return sum / nums.length;
+        return ((Number) Double.valueOf(sum / nums.length));
     }
 
 
