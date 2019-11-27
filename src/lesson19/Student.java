@@ -8,7 +8,6 @@ public class Student implements Serializable {
     private String lastname;
 
     public Student(int age, String firstName, String lastname) {
-        super();
         this.age = age;
         this.firstName = firstName;
         this.lastname = lastname;

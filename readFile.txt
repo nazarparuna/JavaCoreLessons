@@ -1,0 +1,4 @@
+Hello, Java 13!
+This is the end of the file!
+No, the last line is not true.
+Цей рядок буде українською!
