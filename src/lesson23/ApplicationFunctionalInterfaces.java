@@ -1,17 +1,26 @@
 package lesson23;
 
+import java.util.function.BiFunction;
+
 public class ApplicationFunctionalInterfaces {
     public static void main(String[] args) {
 
         // predicate
 
-        // binary operator
-
-        // unary operator
-
         // function
 
         // consumer
+
+        BiFunction<Integer, Long, Double> biFunction = (x, y) -> Double.valueOf(x + y);
+
+        Double aDouble = biFunction.apply(1, 2L);
+        System.out.println(aDouble);
+        System.out.println();
+
+        // binary operator
+
+
+        // unary operator
 
         // supplier which generates user
     }
