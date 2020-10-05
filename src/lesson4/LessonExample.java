@@ -8,7 +8,7 @@ public class LessonExample {
         Human human1 = new Man();
         Human human2 = new Woman();
 
-        if (human2 instanceof Man) {
+        if (human2.getClass().getSimpleName().equals("Man")) {
             ((Man) human2).hunt(chicken);
         } else {
             ((Woman) human2).cook(chicken);

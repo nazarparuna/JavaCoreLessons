@@ -151,7 +151,13 @@ public class Lesson4 {
         Human human1 = new Man();
         Human human2 = new Woman();
 
-        if(human1 instanceof Man){
+//        if(human1 instanceof Man){
+//            ((Man)human1).hunt(chicken);
+//        } else {
+//            ((Woman)human1).cook(chicken);
+//        }
+
+        if (human1.getClass().getSimpleName().equals("Man")) {
             ((Man)human1).hunt(chicken);
         } else {
             ((Woman)human1).cook(chicken);
