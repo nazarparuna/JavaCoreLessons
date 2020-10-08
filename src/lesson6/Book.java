@@ -2,7 +2,7 @@ package lesson6;
 
 public class Book implements Print, Info {
 
-    void read() {
+    public void read() {
         System.out.println("Someone is reading me!");
     }
 
@@ -29,7 +29,7 @@ public class Book implements Print, Info {
         System.out.println("I am!");
     }
 
-    interface Page {
+    public interface Page {
         static void getNumber() {
             System.out.println("I don't know!");
         }

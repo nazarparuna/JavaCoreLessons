@@ -6,7 +6,7 @@ public interface Info {
     void info();
 
     default void printBooks(int books) {
-        System.out.println("show info from info");
+        System.out.println("Show info from " + books + " books");
     }
 
     static void staticMethod() {

@@ -7,7 +7,6 @@ public interface Print extends Paper, Sheet {
 
     default void printBooks(int books) {
         System.out.println("show info from print");
-
     }
 
 
