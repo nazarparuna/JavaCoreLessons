@@ -1,10 +1,14 @@
 package lesson7.isp.good;
 
-public class Penguine implements Bird, Swimmable {
-    @Override
-    public void go() {
-        System.out.println("Penguine is going");
+public class Penguine extends Bird implements Swimmable {
+    public Penguine(String name) {
+        super(name);
     }
+
+//    @Override
+//    public void go() {
+//        System.out.println("Penguine is going");
+//    }
 
     @Override
     public void swim() {

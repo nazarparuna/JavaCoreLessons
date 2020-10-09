@@ -9,7 +9,7 @@ public class Square implements Squareabe {
 
 
     @Override
-    public void calculateSquare() {
-        System.out.println("Square is " + Math.pow(side, 2));
+    public String calculateSquare() {
+        return ("Square is " + Math.pow(side, 2));
     }
 }

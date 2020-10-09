@@ -27,7 +27,7 @@ public class Rectangular implements Squareabe {
     }
 
     @Override
-    public void calculateSquare() {
-        System.out.println("Square is " + (height * width));
+    public String calculateSquare() {
+        return "Square is " + (height * width);
     }
 }

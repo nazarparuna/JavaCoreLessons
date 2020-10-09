@@ -8,6 +8,5 @@ public class Main {
         Square square = new Square(14);
         square.calculateSquare();
 
-
     }
 }

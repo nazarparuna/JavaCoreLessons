@@ -6,5 +6,6 @@ public class Main {
         concierge.greet("wife");
         concierge.greet("guy");
         concierge.greet("minister");
+        concierge.greet("Sasha");
     }
 }

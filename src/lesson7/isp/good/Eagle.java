@@ -1,11 +1,15 @@
 package lesson7.isp.good;
 
-public class Eagle implements Bird, Flyable {
+public class Eagle extends Bird implements Flyable {
 
-    @Override
-    public void go() {
-        System.out.println("Eagle is going");
+    public Eagle(String name) {
+        super(name);
     }
+
+//    @Override
+//    public void go() {
+//        System.out.println("Eagle is going");
+//    }
 
     @Override
     public void fly() {

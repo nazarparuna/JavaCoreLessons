@@ -1,8 +1,9 @@
 package lesson7.ocp.good;
 
-public class Guy implements Personality {
+public class Enemy implements Personality {
+
     @Override
     public String greet() {
-        return "Hi!";
+        return "Go away";
     }
 }
