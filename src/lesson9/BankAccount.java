@@ -11,6 +11,9 @@ package lesson9;
 public class BankAccount {
 
     // save amount of your cash
+    /**
+     * гроші
+     */
     private int money;
 
     // take amount of your money
