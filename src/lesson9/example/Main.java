@@ -45,16 +45,25 @@ public class Main {
 //        } finally {
 //            System.out.println("we are inside of finally block");
 //        }
-        BufferedInputStream bf = null;
-        try {
-            bf = new BufferedInputStream(System.in);
+//        BufferedInputStream bf = null;
+//        try {
+//            bf = new BufferedInputStream(System.in);
+//
+//            BufferedReader r = new BufferedReader(new InputStreamReader(bf));
+//
+//            String line = r.readLine();
+//            System.out.println(line);
+//        } catch (IOException e) {
+//            bf.close();
+//        }
+
+        try (BufferedInputStream bf = new BufferedInputStream(System.in)) {
+
 
             BufferedReader r = new BufferedReader(new InputStreamReader(bf));
 
             String line = r.readLine();
             System.out.println(line);
-        } catch (IOException e) {
-            bf.close();
         }
 
 
