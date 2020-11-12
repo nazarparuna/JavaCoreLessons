@@ -1,0 +1,5 @@
+hello, world!
+line line
+this is another line
+end!
+А зараз солов'їна! Хей!
