@@ -13,7 +13,16 @@ public class ReferenceTest {
         ReferenceTest referenceTest = new ReferenceTest();
         intSeq.forEach(referenceTest::sqrt);
 
-//        referenceTest
+        System.out.println();
+        System.out.println("Constructor reference example:");
+//        Roddom roddom = ReferenceTest::create;
+        Roddom roddom = Person::new;
+
+        System.out.println(roddom.create("Nazar", 25));
+    }
+
+    public static Person create(String name, int age) {
+        return new Person(name, age);
     }
 
     public static void pow(Integer value) {
@@ -22,9 +31,5 @@ public class ReferenceTest {
 
     public void sqrt(Integer value) {
         System.out.println(Math.sqrt(value));
-    }
-
-    public Person create(String name, int age) {
-        return new Person(name, age);
     }
 }
