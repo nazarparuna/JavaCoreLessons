@@ -32,7 +32,7 @@ public class StreamsTest {
         stream.forEach(System.out::println);
         System.out.println();
         System.out.println("Stream from array:");
-        int[] array = {29, 2, 5, -4, 0, 10, 2, 3, 4, 6, 7};
+        int[] array = {29, 7, 0, -4, 2, 5, -4, 0, 10, 2, 3, 4, 6, 6, 7};
         IntStream stream1 = Arrays.stream(array);
 
         stream1.forEach(System.out::println);
@@ -98,5 +98,33 @@ public class StreamsTest {
         System.out.println("max example:");
         int asInt2 = Arrays.stream(array).max().getAsInt();
         System.out.println(asInt2);
+
+        System.out.println("additional");
+
+        System.out.println();
+        System.out.println("distinct example:");
+        Arrays.stream(array).distinct().sorted().forEach(System.out::println);
+
+        List<Integer> numbers = Arrays.asList(0, 1, 2, 4);
+
+        System.out.println();
+        System.out.println("allMatch example:");
+        boolean allIsEven = numbers.stream().allMatch(x -> x % 2 == 0);
+        System.out.println(allIsEven);
+
+        System.out.println();
+        System.out.println("noneMatch example:");
+        boolean noneIsEven = numbers.stream().noneMatch(x -> x % 2 == 0);
+        System.out.println(noneIsEven);
+
+        System.out.println();
+        System.out.println("anyMatch example:");
+        boolean anyIsEven = numbers.stream().anyMatch(x -> x % 2 == 0);
+        System.out.println(anyIsEven);
+
+        System.out.println();
+        System.out.println("count example:");
+        long count = numbers.stream().count();
+        System.out.println(count);
     }
 }
